@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Title Picker",
   "description": "Picks title of current tab",
-  "version": "1.0",
+  "version": "2.0",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "images/title.png"
@@ -12,7 +12,26 @@
     "32": "images/title.png",
     "128": "images/title2.png"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/in/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "host_permissions": [
+    "https://www.linkedin.com/in/*"
+  ],
+  
   "permissions": [
     "activeTab",
+    "tabs"
   ]
 }
