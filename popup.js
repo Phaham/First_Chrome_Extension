@@ -37,6 +37,7 @@ comment.addEventListener('keyup', function () {
 const sendData = async (data) => {
   let queryOptions = { active: true, lastFocusedWindow: true };
   chrome.tabs.query(queryOptions, async (tab) => {
+    // chrome.tabs.update(tab.id, {url: 'https://www.linkedin.com/feed/'});
     chrome.tabs.sendMessage(tab[0].id, data, async (response) => {
       console.log(await response);
     });
