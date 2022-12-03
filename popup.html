@@ -17,23 +17,21 @@
     <div class="container">
       <!-- <h1 class="heading">Title Picker</h1> -->
       <!-- <button id="check">Pick Title</button> -->
-      <h1 class="heading">LinkedIn Scraper</h1>
+      <h1 class="heading">LinkedIn Bot</h1>
     </div>
 
 
     <div class="wrapper hidden">
-      <!-- <div class="selectTitle">
-
-        <span class="tab">Current Title : </span>
-        <span class="title"></span>
-      </div> -->
-      <div class="selectTitle">
-        <!-- <span class="tab">Current url : </span>
-          <span class="url"></span> -->
-        <input type="input" class="form__field" placeholder="Provide Array Of LinkedIn links"  id='links'
-          required />
-        <label for="name" class="form__label">Provide Array Of LinkedIn links</label>
-        <button id="check">Get Info</button>
+      <div class="input-group">
+        <div class="user-box">
+          <input type="text" class="like input-field" placeholder="" autocomplete="off" required>
+          <label>Like Count</label>
+        </div>
+        <div class="user-box">
+          <input type="text" class="comment input-field" placeholder="" required>
+          <label>Comment Count</label>
+        </div>
+        <button type="submit" id="check" class="disabled">React on posts</button>
       </div>
     </div>
   </div>
