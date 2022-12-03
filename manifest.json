@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Title Picker",
-  "description": "Picks title of current tab",
-  "version": "2.0",
+  "name": "LinkedIn Bot",
+  "description": "React or Comment on given no of posts",
+  "version": "3.0",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "images/title.png"
@@ -15,19 +15,16 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.linkedin.com/in/*"
+        "https://www.linkedin.com/feed/"
       ],
       "js": [
         "content.js"
       ]
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
 
   "host_permissions": [
-    "https://www.linkedin.com/in/*"
+    "https://www.linkedin.com/feed/"
   ],
   
   "permissions": [
