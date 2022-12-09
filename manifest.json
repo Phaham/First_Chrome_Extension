@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "LinkedIn Bot",
-  "description": "React or Comment on given no of posts",
-  "version": "3.0",
+  "name": "Screen Capture",
+  "description": "Capture current open tab's screen",
+  "version": "4.0",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "images/title.png"
@@ -15,20 +15,17 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.linkedin.com/feed/"
+        "<all_urls>"
       ],
       "js": [
         "content.js"
       ]
     }
   ],
-
-  "host_permissions": [
-    "https://www.linkedin.com/feed/"
-  ],
   
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "desktopCapture"
   ]
 }
