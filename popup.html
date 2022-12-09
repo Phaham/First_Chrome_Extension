@@ -15,28 +15,25 @@
 <body>
   <div class="main-container">
     <div class="container">
-      <!-- <h1 class="heading">Title Picker</h1> -->
-      <!-- <button id="check">Pick Title</button> -->
-      <h1 class="heading">LinkedIn Bot</h1>
+      <h1 class="heading">Screen Capture</h1>
     </div>
 
 
-    <div class="wrapper hidden">
+    <div class="wrapper">
       <div class="input-group">
-        <div class="user-box">
-          <input type="text" class="like input-field" placeholder="" autocomplete="off" required>
-          <label>Like Count</label>
-        </div>
-        <div class="user-box">
-          <input type="text" class="comment input-field" placeholder="" required>
-          <label>Comment Count</label>
-        </div>
-        <button type="submit" id="check" class="disabled">React on posts</button>
+        <button type="submit" id="check" class="btn">Capture Screen</button>
       </div>
     </div>
-  </div>
 
-  <script src="./popup.js"></script>
+    <div class="popup hidden">
+      <video class="video hidden" controls width="50%"></video>
+      <div class="content">
+        <button class="start" id="check">Start</button>
+        <button class="stop hidden" id="check">Stop</button>
+      </div>
+    </div>
+
+    <script src="./popup.js"></script>
 </body>
 
 </html>
