@@ -47,6 +47,7 @@ start.addEventListener('click', () => {
 
 // start.addEventListener('click', () => {
 //   chrome.runtime.sendMessage(sender, request, response => {
+//     if(response == 'success'){
 //     const startCapture = async () => {
 //       const stream = await navigator.mediaDevices.getDisplayMedia({
 //         video: {
@@ -70,6 +71,11 @@ start.addEventListener('click', () => {
 //         }))
 //       })
 //     }
+//   }
+//   else{
+//     throw error('Data not available');
+//     console.log(err);
+//   }
 //   });
 // });
 
